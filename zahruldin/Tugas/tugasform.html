@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            display: flex;
+            justify-content: center;
+        }
+
+        hr {
+            width: 820px;
+        }
+
+        .container {
+            width: 1000px;
+            background-color: #ffffff;
+            padding: 20px;
+            border: 1px solid #ccc;
+            margin: 20px 0;
+        }
+
+        .header-judul {
+            font-size: 7px;
+            height: 28px;
+            text-align: center;
+            padding-top: 12px;
+            background-color: rgb(174, 172, 172);
+            width: 900px;
+        }
+
+        .header-kotak {
+            margin-top: 12px;
+            margin-bottom: 12px;
+            display: flex;
+        }
+
+        .kotaksatu,
+        .kotakdua,
+        .kotaktiga {
+            border: solid 1px;
+            padding-right: 30px;
+        }
+
+        .header-kotak .textsatu {
+            margin-top: 30px;
+            font-size: 12px;
+        }
+
+        .sectionsatu {
+            display: flex;
+            margin-top: 20px;
+            margin-bottom: 12px;
+        }
+
+        .kotakempat input,
+        .kotaklima input {
+            margin-right: 90px;
+            font-size: 13px;
+            height: 35px;
+        }
+
+        .sectionsatu p {
+            font-size: 10px;
+            font-weight: bold;
+        }
+
+        .section {
+            margin-bottom: 20px;
+        }
+
+        .section-judul {
+            display: flex;
+        }
+
+        .section-judul p {
+            background-color: rgb(174, 172, 172);
+            width: 890px;
+            font-weight: bold;
+            padding: 8px;
+            font-size: 0.9em;
+            border: 1px solid #ddd;
+            margin-bottom: 10px;
+        }
+
+        .input-verifikasi {
+            font-size: 4px;
+            height: 20px;
+        }
+
+        .titik {
+            border: none;
+            border-bottom: 1px dotted #000;
+            padding: 5px;
+            font-size: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header-judul">
+            <h1>FORMULIR REGISTRASI BADAN USAHA / BADAN HUKUM LAINNYA PEKERJA PENERIMA UPAH (PPU)</h1>
+        </div>
+        <div class="header-kotak">
+            <div class="kotaksatu">
+                <p>Diverifikasi Oleh :</p>
+                <p>Tgl.</p>
+            </div>
+            <div class="kotakdua">
+                <p>Direkam Oleh :</p>
+                <p>Tgl.</p>
+            </div>
+            <div class="kotaktiga">
+                <p>Setuju Kanit Pemasaran</p>
+                <p>Tgl.</p>
+            </div>
+            <p class="textsatu">(Diisi oleh petugas BPJS Kesehatan)</p>
+        </div>
+        <hr>
+        <hr>
+        <div class="sectionsatu">
+            <div class="kotakempat">
+                <label for="Kode">Kode Badan Usaha/Badan Hukum lainnya :</label>
+                <input type="text" name="Kode" id="Kode">
+                <p>(Diisi oleh petugas BPJS Kesehatan)</p>
+            </div>
+            <div class="kotaklima">
+                <label for="no">No. Virtual Account</label>
+                <input type="text" name="no" id="no">
+            </div>
+        </div>
+        <hr>
+        <hr>
+        <div class="section">
+            <div class="section-judul">
+                <p>IDENTITAS BADAN USAHA / BADAN HUKUM LAINNYA</p><span>Verifikasi</span>
+            </div>
+            <table>
+                <tr>
+                    <td style="width: 35%;">Nama Badan Usaha/Badan Hukum Lainnya : </td>
+                    <td colspan="6"><input type="text" class="titik" style="width: 400px;"></td>
+                    <td><input type="text" class="input-verifikasi"></td>
+                </tr>
+                <tr>
+                    <td rowspan="3" style="vertical-align: top;">Alamat badan usaha/badan hukum lainnya : </td>
+                    <td>Jl. </td>
+                    <td colspan="5"><input type="text" class="titik" style="width: 350px;"></td>
+                    <td><input type="text" class="input-verifikasi"></td>
+                </tr>
+                <tr>
+                    <td>Kelurahan:</td>
+                    <td colspan="2"><input type="text" width="100px"></td>
+                    <td>Kecamatan:</td>
+                    <td colspan="3"><input type="text"></td>
+                </tr>
+                <tr>
+                    <td>Kab/Kota :</td>
+                    <td colspan="2"><input type="text" width="100px"></td>
+                    <td>Kode Pos: </td>
+                    <td colspan="3"><input type="text"></td>
+                </tr>
+                <tr>
+                    <td>Telepon</td>
+                    <td><input type="text" style="width: 50px;"></td>
+                    <td colspan="2"><input type="text"></td>
+                    <td>Faksimili: </td>
+                    <td><input type="text" style="width: 50px;"></td>
+                    <td colspan="2"><input type="text" style="width: 80px;"></td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td colspan="7"><input type="text" class="titik" style="width: 350px;"></td>
+                </tr>
+                <tr>
+                    <td>Status Badan Usaha/Badan hukum lainnya
+                        (pilih salah satu)
+                    </td>
+                    <td><input type="checkbox">Pusat</td>
+                    <td><input type="checkbox">cabang</td>
+                    <td><input type="checkbox"><label for="" style="font-size: 9px; font-weight: bold;">Anak
+                            Perusahaan</label></td>
+                    <td colspan="2"><input type="checkbox"><label for="" style="font-size: 14px;">Cabang Anak
+                            Perusahaan</label></td>
+                    <td><input type="checkbox">Lainnya**</td>
+                    <td><input type="text" class="input-verifikasi"></td>
+                </tr>
+                <tr>
+                    <td>Bentuk Badan Hukum
+                        <pre>(pilih salah satu)</pre>
+                    </td>
+                    <td><input type="checkbox">PT</td>
+                    <td><input type="checkbox">CV</td>
+                    <td><input type="checkbox">UD</td>
+                    <td><input type="checkbox">Koperasi</td>
+                    <td><input type="checkbox">Yayasan</td>
+                    <td><input type="checkbox">Lainnya**</td>
+                    <td><input type="text" class="input-verifikasi"></td>
+                </tr>
+                <tr>
+                    <td>Nomor Izin Usaha/Izin Lainnya (Akta, MOU, dll)</td>
+                    <td colspan="6"><input type="text" name="" id="" style="width: 500px;"></td>
+                    <td><input type="text" class="input-verifikasi"></td>
+                </tr>
+                <tr>
+                    <td>Jenis Usaha Utama : </td>
+                    <td colspan="7"><input type="text" class="titik" style="width: 350px;"></td>
+                </tr>
+                <tr>
+                    <td>NPWP Badan/Perorangan</td>
+                    <td><input type="text" style="width: 50px;"></td>
+                    <td colspan="2"><input type="text"></td>
+                    <td><input type="text" style="width: 50px;"></td>
+                    <td colspan="2"><input type="text"></td>
+                    <td><input type="text" class="input-verifikasi"></td>
+                </tr>
+                <tr>
+                    <td style="font-size: 14px;">Nama Pimpinan Badan Usaha/Badan Hukum Lainnya:</td>
+                    <td colspan="6"><input type="text" class="titik" style="width: 350px;"></td>
+                    <td><input type="text" class="input-verifikasi"></td>
+                </tr>
+                <tr>
+                    <td rowspan="2" style="height: 100px;">Status Kepemilikan Badan usaha/Badan Hukum Lainnya:
+                        <pre>(pilih salah satu)</pre>
+                    </td>
+                    <td style="font-size: 9px; font-weight: bold;"><input type="checkbox">Swasta Nasional</td>
+                    <td><input type="checkbox">BUMN</td>
+                    <td><input type="checkbox">Koperasi</td>
+                    <td colspan="2"><input type="checkbox" style="width: 25px;">Joint Venture</td>
+                    <td><input type="checkbox">Lainnya**</td>
+                    <td><input type="text" class="input-verifikasi"></td>
+                </tr>
+                <tr>
+                    <td style="font-size: 9px; font-weight: bold;"><input type="checkbox">Swasta Asing</td>
+                    <td><input type="checkbox">BUMD</td>
+                    <td><input type="checkbox">Yayasan</td>
+                </tr>
+                <tr>
+                    <td>Jenis Usaha</td>
+                    <td colspan="6"><input type="text" class="titik" style="width: 350px;"></td>
+                    <td><input type="text" class="input-verifikasi"></td>
+                </tr>
+                <tr>
+                    <td>Kode Klasifikasi Baku Lapangan Usaha Indonesia</td>
+                    <td colspan="6"><input type="text" name="" id="" style="width: 500px;"></td>
+                    <td><input type="text" class="input-verifikasi"></td>
+                </tr>
+            </table>
+        </div>
+        <div class="section">
+            <div class="section-judul">
+                <p>IDENTITAS CONTACT PERSON BADAN USAHA/BADAN HUKUM</p>
+            </div>
+            <table style="width: 100%;">
+                <tr>
+                    <td style="width: 35%;">Nama Lengkap:</td>
+                    <td colspan="7"><input type="text" class="titik" style="width: 350px;"></td>
+                    <td><input type="text" class="input-verifikasi"></td>
+                </tr>
+                <tr>
+                    <td>Jabatan</td>
+                    <td colspan="7"><input type="text" class="titik" style="width: 350px;"></td>
+                    <td><input type="text" class="input-verifikasi"></td>
+                </tr>
+                <tr>
+                    <td>Telepon dan Extension</td>
+                    <td><input type="text" style="width: 50px;"></td>
+                    <td colspan="2"><input type="text"></td>
+                    <td colspan="2">Ext :</td>
+                    <td colspan="2"><input type="text" style="width: 50px;"></td>
+                    <td><input type="text" class="input-verifikasi"></td>
+                </tr>
+                <tr>
+                    <td>Handphone : </td>
+                    <td colspan="2"><input type="text" name="" id=""></td>
+                    <td>Email :</td>
+                    <td colspan="4"><input type="text" class="titik" style="width: 250px;"></td>
+                    <td><input type="text" class="input-verifikasi"></td>
+            </table>
+        </div>
+        <div class="section">
+            <div class="section-judul">
+                <p>KEIKUTSERTAAN PROGRAM JAMINAN KESEHATAN NASIONAL (JKN)</p>
+            </div>
+            <table style="width: 100%;">
+                <tr>
+                    <td style="width: 35%;">Menjadi Peserta Sejak</td>
+                    <td colspan="2"><input type="text" style="width: 40px;">
+                        <pre>Tgl</pre>
+                    </td>
+                    <td colspan="2"><input type="text" style="width: 40px;">
+                        <pre>Bln</pre>
+                    </td>
+                    <td colspan="3"><input type="text" name="" id="">
+                        <pre>Thn</pre>
+                    </td>
+                    <td align="right"><input type="text" class="input-verifikasi"></td>
+                </tr>
+                <tr>
+                    <td>Jumlah Tenaga kerja</td>
+                    <td colspan="7"><input type="text">Orang</td>
+                    <td align="right"><input type="text" class="input-verifikasi"></td>
+                </tr>
+                <tr>
+                    <td>Jumlah Keluarga</td>
+                    <td colspan="7"><input type="text">Orang</td>
+                    <td align="right"><input type="text" class="input-verifikasi"></td>
+                </tr>
+                <tr>
+                    <td>Total Tenaga kerja dan Keluarga</td>
+                    <td colspan="7"><input type="text">Orang</td>
+                    <td align="right"><input type="text" class="input-verifikasi"></td>
+                </tr>
+            </table>
+        </div>
+        <div class="section">
+            <div class="section-judul">
+                <p>PENGIRIMAN TAGIHAN IURAN JAMINAN KESEHATAN NASIONAL (UKN)</p>
+            </div>
+            <table>
+                <tr>
+                    <td width="68%">Pengiriman Tagihan Iuran Melalui</td>
+                    <td><input type="checkbox">E-mail</td>
+                    <td><input type="checkbox">Surat</td>
+                    <td><input type="checkbox">SMS</td>
+                </tr>
+            </table>
+        </div>
+        <pre>
+Saya Menyatakan Bahwa informasi ini dibuat dengan sebenarnya, apabila informasi ini tidak benar maka saya bersedia dikenakan sanksi
+sesuai dengan peraturan perundang-undangan yang berlaku
+
+
+Kepala Cabang Utama/Cabang                                                    .............................20............
+                                                                              Pimpinan/Direktur .........................
+                                                                        Materai
+                                                                        Rp.6000
+
+
+
+
+....................                                                          ...........................................
+Pembayaran iuran jaminan kesehatan selambat-lambatnya setiap tanggal 10. apabila melewati tanggal tersebut akaan dikenakan denda 
+keterlambatan iuran dan sanksi sesuai dengan ketentuan yang berlaku
+<u>Catatan</u>
+(*)Diisi nama lengkap, tanda tangan dan stempel Perusahaan
+(**)Lainnya agar disebutkan
+        </pre>
+    </div>
+</body>
+
+</html>
